@@ -7,9 +7,15 @@
   "author": "Alejandro Nanez <alejonanez@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "axios": "^0.15.3",
     "express": "^4.14.1",
     "express-graphql": "^0.6.3",
     "graphql": "^0.9.1",
+    "json-server": "^0.9.5",
     "lodash": "^4.17.4"
+  },
+  "scripts": {
+    "start": "nodemon server.js",
+    "json:server": "json-server --watch db.json"
   }
 }
