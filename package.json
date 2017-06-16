@@ -15,10 +15,12 @@
     "lodash": "^4.17.4"
   },
   "scripts": {
-    "start": "nodemon server.js",
+    "server": "nodemon server.js",
+    "start": "npm-run-all --parallel server json:server",
     "json:server": "json-server --watch db.json"
   },
   "devDependencies": {
-    "nodemon": "^1.11.0"
+    "nodemon": "^1.11.0",
+    "npm-run-all": "^4.0.2"
   }
 }
